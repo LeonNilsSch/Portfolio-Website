@@ -1,6 +1,8 @@
 import LearnifyXCodeIMG from "../assets/LearnifyxCode-Screenshot.png";
 import TaskListIMG from "../assets/TaskList Screenshot.png";
 import PortfolioIMG from "../assets/funny-ph.png";
+import BackgroundWallpaper from "../assets/pf-wallpaper.jpg"; // Import the background wallpaper
+
 const projects = [
   {
     id: 1,
@@ -76,33 +78,46 @@ const projects = [
 
 const ProjectPage = () => {
   return (
-    <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
-      <h1 className="text-3xl font-bold mb-3">My Projects</h1>
-      <h2 className="text-1xl mb-12">
-        these are some more details to my own Projects
-      </h2>
-      <div className="space-y-8">
-        {projects.map((project) => (
-          <div key={project.id} className="max-w-lg mx-auto">
-            <img
-              className="w-full h-64 object-cover rounded-lg"
-              src={project.image}
-              alt={project.name}
-            />
-            <div className="bg-white p-4 rounded-lg">
-              <h2 className="text-xl font-semibold mb-2">{project.name}</h2>
-              <p className="text-gray-600 mb-4">{project.description}</p>
-              <a
-                href={project.githubLink}
-                className="text-blue-500 hover:underline"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View on GitHub
-              </a>
+    <div
+      className="relative min-h-screen"
+      style={{
+        backgroundImage: `url(${BackgroundWallpaper})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div
+        className="absolute inset-0 bg-black opacity-50"
+        aria-hidden="true"
+      ></div>
+      <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8 relative z-10">
+        <h1 className="text-3xl font-bold mb-3 text-white">My Projects</h1>
+        <h2 className="text-1xl mb-12 text-white opacity-80">
+          These are some more details to my own Projects
+        </h2>
+        <div className="space-y-8">
+          {projects.map((project) => (
+            <div key={project.id} className="max-w-lg mx-auto">
+              <img
+                className="w-full h-64 object-cover rounded-lg"
+                src={project.image}
+                alt={project.name}
+              />
+              <div className="bg-white p-4 rounded-lg">
+                <h2 className="text-xl font-semibold mb-2">{project.name}</h2>
+                <p className="text-gray-600 mb-4">{project.description}</p>
+                <a
+                  href={project.githubLink}
+                  className="text-blue-500 hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View on GitHub
+                </a>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

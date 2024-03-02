@@ -1,10 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+    <title>Portfolio - Leon Schwinkendorf</title>
+    <script type="module">
+      // Dynamically import the image file
+      import profilePicUrl from '/Users/leonnilsschwinkendorf/Documents/React Projects/portfolio-website-vite/leon-portfolio/src/assets/profilePic.jpg';
+
+      // Create a new link element for the favicon
+      const link = document.createElement('link');
+      link.rel = 'icon';
+      link.type = 'image/svg+xml';
+      link.href = profilePicUrl;
+
+      // Append the link element to the document head
+      document.head.appendChild(link);
+    </script>
   </head>
   <body>
     <div id="root"></div>
