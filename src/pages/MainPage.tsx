@@ -1,8 +1,11 @@
-import Header from "../components/Header";
+import Home from "../components/Home";
 import AboutMe from "../components/AboutMe";
 import Projects from "../components/Projects";
 import ProjectPageButton from "../components/ProjectPageButton";
 import BackgroundImage from "../assets/pf-wallpaper.jpg"; // Import your background image
+import Contact from "../components/Contact";
+import Navbar from "../components/NavBar";
+import Skills from "../components/Skills";
 
 const MainPage = () => {
   return (
@@ -17,10 +20,13 @@ const MainPage = () => {
       ></div>
       {/* Content */}
       <div className="relative z-10">
-        <Header />
+        <Navbar />
+        <Home />
         <AboutMe />
+        <Skills />
         <Projects />
         <ProjectPageButton />
+        <Contact />
       </div>
     </div>
   );

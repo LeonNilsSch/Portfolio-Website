@@ -17,11 +17,10 @@ const projects = [
         <br />
         - Programming Language: Typescript, HTML, CSS
         <br />
-        <br />
-        Intension: I had the struggle myself, that I was always weirdly
-        organizing my Projects and Brainstorming, so I forgot many things. Then
-        I had the Idea to build a Webapp that helps me with that problem
-        afterwards and I get more of routine while building this webapp.
+        <br />- Intention: Struggling with project organization and
+        brainstorming, I often forgot important details. This inspired me to
+        create a web app to tackle this issue, leading to improved routine and
+        productivity as I built it.
       </>
     ),
     image: LearnifyXCodeIMG,

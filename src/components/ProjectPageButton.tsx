@@ -12,7 +12,7 @@ const ProjectPageButton = () => {
   return (
     <div className="p-10 text-center">
       <Button
-        className="bg-gray-200 hover:bg-gray-300 text-white font-bold py-3 px-6 rounded"
+        className="bg-gray-200 hover:bg-gray-300 text-white font-bold py-3 px-6 rounded mb-20"
         onClick={handleButtonClick}
       >
         More Project Details

@@ -31,3 +31,9 @@ body {
     text-wrap: balance;
   }
 }
+
+/* In your CSS file */
+.bg-behind {
+  background-image: url("../assets/background.jpg"); /* Path to your background image */
+  background-size: cover; /* Cover the entire background */
+}

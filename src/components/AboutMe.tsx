@@ -1,7 +1,3 @@
-//AboutMe.tsx////////////////////////////////////////////////////////////////
-
-"use client";
-
 import { FaArrowDown } from "react-icons/fa";
 
 const AboutMe = () => {
@@ -11,36 +7,33 @@ const AboutMe = () => {
   };
 
   return (
-    <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8 mb-20">
+    <div className="container mx-auto p-20 lg:px-8 mb-20">
       <div className="max-w-5xl mx-auto mb-20">
-        <h1 className="text-3xl font-bold mb-8">About Me</h1>
+        <h1 className="text-3xl font-bold mb-8 text-center">About Me</h1>
         <p className="text-lg mb-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel
-          arcu sit amet turpis elementum bibendum. Ut vel maximus nunc, eu
-          dapibus lorem. Nulla facilisi. Mauris ultrices nunc et felis
-          ullamcorper, eget lobortis est lacinia. Nulla facilisi. Aliquam erat
-          volutpat. Integer eu nunc fermentum, varius odio sit amet, euismod
-          libero. Integer scelerisque, libero nec convallis feugiat, odio elit
-          rhoncus velit, nec bibendum magna lacus non orci. Suspendisse
-          efficitur orci non ligula hendrerit, quis fringilla purus pharetra.
-          Nulla non nisi vitae nulla lobortis finibus ut et erat. Suspendisse
-          volutpat eleifend mi, vitae interdum sapien faucibus eget. Nam sed
-          orci pretium, molestie nisi vitae, interdum sapien.
+          As a Software Engineering Trainee at Fielmann Group AG, I blend my
+          passion for technology with a keen sense of organization and
+          productivity. Following my completion of a technical diploma, I
+          deliberately chose this path to further cultivate my skills in a
+          dynamic environment like Fielmann. In my professional routine, I
+          advocate for efficient processes and strive for optimal outcomes on a
+          daily basis. These principles not only guide me in my job but also
+          extend to my personal life.
         </p>
-        <p className="text-lg">
-          Fusce ut arcu et orci eleifend sollicitudin. Praesent accumsan
-          dignissim velit, non lacinia risus venenatis et. Duis et mi vitae nisi
-          consectetur posuere. Vivamus id aliquam orci. Morbi nec arcu vel velit
-          efficitur condimentum in eget nunc. Curabitur nec tortor quis lorem
-          mollis accumsan. Vestibulum ante ipsum primis in faucibus orci luctus
-          et ultrices posuere cubilia Curae; Nunc consectetur purus vel arcu
-          aliquet, in cursus urna interdum. Integer vestibulum a lorem eget
-          volutpat.
+        <p className="text-lg mb-20">
+          Outside of work, I am an avid basketball player, cherishing the team
+          spirit and challenges of the sport. My love for technology is also
+          evident in my leisure time, where I am always on the lookout for new
+          gadgets and innovations. As a hobbyist graphic designer, I find an
+          outlet for my creative side while simultaneously deepening my
+          technical skills. Overall, I aspire to harmonize my passions and
+          abilities in a balanced lifestyle and contribute to the development of
+          innovative solutions at Fielmann.
         </p>
       </div>
 
       {/* Timeline */}
-      <div className="bg-white rounded-lg shadow p-6 mt-8">
+      <div className="max-w-5xl mx-auto bg-white rounded-lg shadow p-10 mt-8 mb-10">
         <h2 className="text-xl font-bold mb-4">My Timeline</h2>
         <div className="flex items-center mb-6">
           <div className="flex-shrink-0">
@@ -51,13 +44,12 @@ const AboutMe = () => {
             />
           </div>
           <div className="ml-4">
-            <p className="text-sm font-medium text-gray-900">August 2023</p>
+            <p className="text-sm font-medium text-gray-900">Februar 2023</p>
             <p className="text-lg font-semibold text-gray-800">
-              Joined Fielmann GROUP AG.
+              Ending of the academical part of my "Fachabitur"
             </p>
             <p className="text-gray-700">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel
-              arcu sit amet turpis elementum bibendum.
+              The beginning of my application phase for an apprenticeship
             </p>
           </div>
         </div>
@@ -72,24 +64,24 @@ const AboutMe = () => {
             />
           </div>
           <div className="ml-4">
-            <p className="text-sm font-medium text-gray-900">December 2021</p>
+            <p className="text-sm font-medium text-gray-900">August 2023</p>
             <p className="text-lg font-semibold text-gray-800">
-              Graduated from University
+              Joined FIELMANN GROUP AG.
             </p>
             <p className="text-gray-700">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel
-              arcu sit amet turpis elementum bibendum.
+              My first day as an Systemadministration Trainee at FIELMANN GROUP
+              AG.
             </p>
           </div>
         </div>
       </div>
-      <div className="flex justify-center mt-8 mb-10">
+      <div className="flex justify-center">
         <a
           href="#bottom"
           className="text-white-500 hover:text-gray-500"
           onClick={scrollToBottom}
         >
-          <FaArrowDown className="h-6 w-6 mt-20 mb-20" />
+          <FaArrowDown className="h-6 w-6" />
         </a>
       </div>
 
