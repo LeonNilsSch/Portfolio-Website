@@ -4,6 +4,7 @@ import JavaScript from "../assets/javascript.png";
 import ReactImg from "../assets/react.png";
 import GitHub from "../assets/github.png";
 import Tailwind from "../assets/tailwind.png";
+import { useEffect, useState, useRef } from "react";
 
 interface SkillItemProps {
   name: string;
@@ -11,8 +12,21 @@ interface SkillItemProps {
 }
 
 const Skills = () => {
+  const [navbarHeight, setNavbarHeight] = useState<number>(0);
+  const navbarRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (navbarRef.current) {
+      setNavbarHeight(navbarRef.current.clientHeight);
+    }
+  }, []);
+
   return (
-    <div id="skills" className="w-full h-screen text-white mb-20">
+    <div
+      id="skills"
+      className="w-full h-screen text-white pt-40"
+      style={{ marginTop: navbarHeight }}
+    >
       <div className="max-w-[1000px] mx-auto p-4">
         <div className="bg-white rounded-lg shadow-md p-8">
           <h2 className="text-4xl font-bold mb-8">Skills</h2>

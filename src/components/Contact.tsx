@@ -2,10 +2,13 @@ import React from "react";
 
 const Contact: React.FC = () => {
   return (
-    <div className="w-full flex justify-center items-center p-4 mt-40">
+    <div
+      id="contact"
+      className="w-full flex justify-center items-center p-4 mt-20 pt-40"
+    >
       <form
         method="POST"
-        action="https://getform.io/f/a699a1b2-f225-434e-b317-1fbbde8e006c"
+        action="https://getform.io/f/pamznolb"
         className="flex flex-col max-w-[600px] w-full"
       >
         <div className="pb-8">

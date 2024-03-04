@@ -25,7 +25,11 @@ const Projects = () => {
   ];
 
   return (
-    <main className="mx-auto p-8" style={{ maxWidth: "1000px" }}>
+    <main
+      id="projects"
+      className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full pt-40 mt-20"
+      style={{ maxWidth: "1000px" }}
+    >
       <h1 className="text-3xl font-bold mb-8">My Projects</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {/* Render project cards */}
