@@ -15,8 +15,8 @@ const AboutMe = () => {
         <div className="max-w-5xl mx-auto mb-20">
           <h1 className="text-3xl font-bold mb-8 text-center">About Me</h1>
           <p className="text-lg mb-4">
-            As a 21 year old Software Engineering Trainee at Fielmann Group AG,
-            I blend my passion for technology with a keen sense of organization
+            As a 21 year old Computer Scientist Trainee at Fielmann Group AG, I
+            blend my passion for technology with a keen sense of organization
             and productivity. Following my completion of a "Fachabitur" in
             Germany, I deliberately chose this path to further cultivate my
             skills in a dynamic environment like Fielmann. In my professional

@@ -43,7 +43,6 @@ const Projects = () => {
           </div>
         ))}
       </div>
-      {/* Button below project cards */}
     </main>
   );
 };

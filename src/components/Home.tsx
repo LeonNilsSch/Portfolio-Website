@@ -1,6 +1,7 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import ProfilePicture from "../assets/profilePic.jpg";
+import { Link } from "react-scroll";
 
 const Home: React.FC = () => {
   return (
@@ -22,21 +23,29 @@ const Home: React.FC = () => {
               Leon Schwinkendorf
             </h1>
             <h2 className="text-4xl sm:text-7xl font-bold text-[#8892b0] ml-5">
-              Im a Computing Scientist Trainee.
+              Im a Computer Scientist Trainee.
             </h2>
           </div>
         </div>
         <p className="text-[#8892b0] py-4 max-w-[700px]">
-          I’m a full-stack Computing Scientist Trainee. Currently, I’m focused
-          on building responsive full-stack web applications.
+          I’m a full-stack Computer Scientist Trainee. Currently, I’m focused on
+          building responsive full-stack web applications.
         </p>
         <div>
-          <button className="text-white group border-2 px-6 py-3 my-2 rounded flex items-center hover:bg-yellow-500 hover:border-yellow-500">
-            View Work
-            <span className="group-hover:rotate-90 duration-300">
-              <HiArrowNarrowRight className="ml-3 " />
-            </span>
-          </button>
+          {" "}
+          <Link
+            to="aboutme"
+            smooth={true}
+            duration={500}
+            className="hover:text-gray-500 cursor-pointer"
+          >
+            <button className="text-white group border-2 px-6 py-3 my-2 rounded flex items-center hover:bg-yellow-500 hover:border-yellow-500">
+              Get started
+              <span className="group-hover:rotate-90 duration-300">
+                <HiArrowNarrowRight className="ml-3 " />
+              </span>
+            </button>
+          </Link>
         </div>
       </div>
     </div>

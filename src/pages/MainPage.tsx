@@ -1,7 +1,7 @@
 import Home from "../components/Home";
 import AboutMe from "../components/AboutMe";
-import Projects from "../components/Projects";
-import ProjectPageButton from "../components/ProjectPageButton";
+import Projects from "../components/Projects/Projects";
+import ProjectPageButton from "../components/Projects/ProjectPageButton";
 import BackgroundImage from "../assets/pf-wallpaper.jpg"; // Import your background image
 import Contact from "../components/Contact";
 import Navbar from "../components/NavBar";

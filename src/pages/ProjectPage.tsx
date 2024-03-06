@@ -1,6 +1,6 @@
 import LearnifyXCodeIMG from "../assets/LearnifyxCode-Screenshot.png";
 import TaskListIMG from "../assets/TaskList Screenshot.png";
-import PortfolioIMG from "../assets/funny-ph.png";
+import PortfolioIMG from "../assets/Portfolio-WebsiteIMG.png";
 import BackgroundWallpaper from "../assets/pf-wallpaper.jpg"; // Import the background wallpaper
 
 const projects = [
