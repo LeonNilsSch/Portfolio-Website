@@ -1,11 +1,10 @@
 import { FaArrowDown } from "react-icons/fa";
+import { Link } from "react-scroll";
+import SchuleImage from "../assets/schule.png";
+import BrilleImage from "../assets/brille.png";
+import PapierImage from "../assets/papier.png";
 
 const AboutMe = () => {
-  const scrollToBottom = () => {
-    const element = document.getElementById("bottom")!;
-    element.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <div
       id="aboutme"
@@ -39,13 +38,57 @@ const AboutMe = () => {
         {/* Timeline */}
         <div className="max-w-5xl mx-auto bg-white rounded-lg shadow p-10 mt-8 mb-10 ">
           <h2 className="text-xl font-bold mb-4">My Timeline</h2>
+          {/* MSA Abschluss */}
           <div className="flex items-center mb-6">
             <div className="flex-shrink-0">
-              <img
-                className="h-12 w-12 rounded-full"
-                src="https://via.placeholder.com/150"
-                alt="Profile"
-              />
+              <img className="h-12 w-12 " src={PapierImage} alt="Profile" />
+            </div>
+            <div className="ml-4">
+              <p className="text-sm font-medium text-gray-900">Juni 2019</p>
+              <p className="text-lg font-semibold text-gray-800">
+                Achieving my "MSA Abschluss"
+              </p>
+              <p className="text-gray-700">
+                had my MSA Exam/Presentations and got my "mittleren
+                Schulabschluss"
+              </p>
+            </div>
+          </div>
+          {/* MSA Abschluss */}
+          <div className="flex items-center mb-6">
+            <div className="flex-shrink-0">
+              <img className="h-12 w-12 " src={PapierImage} alt="Profile" />
+            </div>
+            <div className="ml-4">
+              <p className="text-sm font-medium text-gray-900">Juni 2019</p>
+              <p className="text-lg font-semibold text-gray-800">
+                Achieving my "MSA Abschluss"
+              </p>
+              <p className="text-gray-700">
+                had my MSA Exam/Presentations and got my "mittleren
+                Schulabschluss"
+              </p>
+            </div>
+          </div>
+          {/* Anfang der Oberstufe */}
+          <div className="flex items-center mb-6">
+            <div className="flex-shrink-0">
+              <img className="h-12 w-12 " src={SchuleImage} alt="Profile" />
+            </div>
+            <div className="ml-4">
+              <p className="text-sm font-medium text-gray-900">August 2019</p>
+              <p className="text-lg font-semibold text-gray-800">
+                Beginning of the Abitur
+              </p>
+              <p className="text-gray-700">
+                I started my Abitur on the Stadteilschule-Richard-Linde-Weg
+              </p>
+            </div>
+          </div>
+          {/* Ende meiner Schullaufbahn */}
+          <div className="flex items-center mb-6">
+            <div className="flex-shrink-0">
+              <img className="h-12 w-12 " src={SchuleImage} alt="Profile" />
             </div>
             <div className="ml-4">
               <p className="text-sm font-medium text-gray-900">Februar 2023</p>
@@ -53,17 +96,17 @@ const AboutMe = () => {
                 Ending of the academical part of my "Fachabitur"
               </p>
               <p className="text-gray-700">
-                The beginning of my application phase for an apprenticeship
+                Choose the way of the "Fachabitur" and began to start look for
+                an Appreticeship
               </p>
             </div>
           </div>
-
-          {/* Additional Timeline Entries */}
+          {/* Anfang meiner Ausbildung bei Fielmann */}
           <div className="flex items-center mb-6">
             <div className="flex-shrink-0">
               <img
                 className="h-12 w-12 rounded-full"
-                src="https://via.placeholder.com/150"
+                src={BrilleImage}
                 alt="Profile"
               />
             </div>
@@ -81,14 +124,19 @@ const AboutMe = () => {
         </div>
       </div>
 
-      <div className="flex justify-center mb-8">
-        <a
-          href="#bottom"
-          className="text-white-500 hover:text-gray-500"
-          onClick={scrollToBottom}
+      <div className="flex justify-center items-center mb-80">
+        <Link
+          to="skills"
+          smooth={true}
+          duration={500}
+          className=" hover:bg-yellow-500 hover:border-yellow-500 cursor-pointer flex items-center rounded-full border border-gray-500 p-2 animate-bounce"
+          style={{ width: "fit-content" }}
         >
-          <FaArrowDown className="h-6 w-6" />
-        </a>
+          <div className="rounded-full border border-gray-500 p-2">
+            <FaArrowDown className="h-6 w-6" />
+          </div>
+          <p className="ml-2">Click Me :D</p>
+        </Link>
       </div>
 
       <div id="bottom"></div>

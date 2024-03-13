@@ -24,7 +24,7 @@ const projects = [
       </>
     ),
     image: LearnifyXCodeIMG,
-    githubLink: "https://github.com/LeonNilsSch/LearnifyXCode",
+    githubLink: "https://github.com/LeonNilsSch/LearnifyXCode-React-old",
   },
   {
     id: 2,
