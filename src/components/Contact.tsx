@@ -14,7 +14,7 @@ const Contact: React.FC = () => {
         <div className="pb-8">
           <p className="text-4xl font-bold inline text-gray-300">Contact</p>
           <p className="text-gray-300 py-4">
-            // Submit the form below or shoot me an email
+            {/* Submit the form below or shoot me an email */}
           </p>
         </div>
         <input
@@ -30,10 +30,11 @@ const Contact: React.FC = () => {
           name="email"
         />
         <textarea
-          className="bg-[#ccd6f6] p-2 rounded-lg"
+          className="bg-[#ccd6f6] p-2 rounded-lg resize-none"
           name="message"
           rows={10}
-          placeholder="Message"
+          maxLength={420} // Set maximum character limit to 420
+          placeholder="Message (max 420 characters)"
         ></textarea>
         <button
           type="submit"

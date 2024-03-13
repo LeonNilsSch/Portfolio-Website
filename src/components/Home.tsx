@@ -7,7 +7,7 @@ const Home: React.FC = () => {
   return (
     <div id="home" className="w-full h-screen">
       {/* Container */}
-      <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full pt-40">
+      <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full pt-40 relative z-10">
         <div className="flex items-center mb-8">
           <div className="relative">
             <img
@@ -29,7 +29,7 @@ const Home: React.FC = () => {
         </div>
         <p className="text-[#8892b0] py-4 max-w-[700px]">
           I’m a full-stack Computer Scientist Trainee. Currently, I’m focused on
-          building responsive full-stack web applications.
+          building responsive full-stack web applications... like this one here.
         </p>
         <div>
           {" "}

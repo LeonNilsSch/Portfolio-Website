@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import MainPage from "./pages/MainPage";
 import ProjectPage from "./pages/ProjectPage";
 import "./index.css"; // Import your global Tailwind CSS file
-
+import "./tailwind.css";
 const App = () => {
   return (
     <Router>

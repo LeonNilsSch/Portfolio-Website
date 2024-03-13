@@ -91,14 +91,14 @@ const ProjectPage = () => {
       ></div>
       <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8 relative z-10">
         <h1 className="text-3xl font-bold mb-3 text-white">My Projects</h1>
-        <h2 className="text-1xl mb-12 text-white opacity-80">
+        <h2 className="text-1xl mb-20 text-white opacity-80">
           These are some more details to my own Projects
         </h2>
-        <div className="space-y-8">
+        <div className="space-y-20">
           {projects.map((project) => (
-            <div key={project.id} className="max-w-lg mx-auto">
+            <div key={project.id} className="max-w-3xl mx-auto">
               <img
-                className="w-full h-64 object-cover rounded-lg"
+                className="w-full rounded-lg"
                 src={project.image}
                 alt={project.name}
               />
