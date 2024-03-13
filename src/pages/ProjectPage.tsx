@@ -1,7 +1,9 @@
+import { useEffect } from "react";
 import LearnifyXCodeIMG from "../assets/LearnifyxCode-Screenshot.png";
 import TaskListIMG from "../assets/TaskList Screenshot.png";
 import PortfolioIMG from "../assets/Portfolio-WebsiteIMG.png";
-import BackgroundWallpaper from "../assets/pf-wallpaper.jpg"; // Import the background wallpaper
+import BackgroundWallpaper from "../assets/pf-wallpaper.jpg";
+import ProjectPageHomeButton from "../components/Projects/ProjectPageHomeButton"; // Import the ProjectPageHomeButton component
 
 const projects = [
   {
@@ -76,6 +78,10 @@ const projects = [
 ];
 
 const ProjectPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page when component mounts
+  }, []);
+
   return (
     <div
       className="relative min-h-screen"
@@ -118,6 +124,8 @@ const ProjectPage = () => {
           ))}
         </div>
       </div>
+      <ProjectPageHomeButton />{" "}
+      {/* Render the ProjectPageHomeButton component */}
     </div>
   );
 };

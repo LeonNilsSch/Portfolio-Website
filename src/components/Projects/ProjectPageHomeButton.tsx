@@ -1,19 +1,13 @@
 import { Button } from "@nextui-org/react";
 import { useNavigate } from "react-router-dom";
-import { useEffect } from "react";
 
-const ProjectPageButton = () => {
+const ProjectPageHomeButton = () => {
   const navigate = useNavigate();
 
   const handleButtonClick = () => {
-    // Navigate to ProjectPage component
-    navigate("/project-page");
+    // Navigate to the main page
+    navigate("/");
   };
-
-  useEffect(() => {
-    // Scroll to the top of the page when component mounts
-    window.scrollTo(0, 0);
-  }, []);
 
   return (
     <div className="p-10 text-center">
@@ -21,10 +15,10 @@ const ProjectPageButton = () => {
         className="bg-gray-200 hover:bg-gray-300 text-white font-bold py-3 px-6 rounded mb-20"
         onClick={handleButtonClick}
       >
-        More Project Details
+        Back to Main Page
       </Button>
     </div>
   );
 };
 
-export default ProjectPageButton;
+export default ProjectPageHomeButton;
