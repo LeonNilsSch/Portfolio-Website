@@ -24,14 +24,14 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className="w-full h-screen text-white pt-40"
+      className="w-full h-screen text-white pt-32"
       style={{ marginTop: navbarHeight }}
     >
       <div className="max-w-[1000px] mx-auto p-4">
-        <div className="bg-white rounded-lg shadow-md p-8">
+        <div className="bg-gray-800 rounded-lg shadow-md p-8">
           <h2 className="text-4xl font-bold mb-8">Skills</h2>
           <p className="mb-8">// These are the technologies I've worked with</p>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-center">
             <SkillItem name="HTML" icon={HTML} />
             <SkillItem name="CSS" icon={CSS} />
             <SkillItem name="JavaScript" icon={JavaScript} />
@@ -46,9 +46,9 @@ const Skills = () => {
 };
 
 const SkillItem = ({ name, icon }: SkillItemProps) => (
-  <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-    <img className="w-20 mx-auto" src={icon} alt={`${name} icon`} />
-    <p className="my-4">{name}</p>
+  <div className="shadow-md hover:scale-110 duration-500">
+    <img className="w-16 mx-auto" src={icon} alt={`${name} icon`} />
+    <p className="my-4 text-lg">{name}</p>
   </div>
 );
 

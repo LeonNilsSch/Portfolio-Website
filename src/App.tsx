@@ -8,7 +8,6 @@ const App = () => {
     <Router>
       <div className="bg-cover bg-center min-h-screen bg-wallpaper">
         {" "}
-        {/* Apply the Tailwind CSS classes here */}
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/project-page" element={<ProjectPage />} />

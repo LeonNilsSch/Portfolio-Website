@@ -8,16 +8,24 @@ const Home: React.FC = () => {
     <div id="home" className="w-full h-screen">
       {/* Container */}
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full pt-40 relative z-10">
-        <div className="flex items-center mb-8">
+        <div className="flex items-center mb-8 flex-col sm:flex-row">
           <div className="relative">
             <img
               src={ProfilePicture}
               alt="Profile Picture"
-              className="h-auto w-[240px] sm:w-[300px] rounded-full mr-10 sm:mr-20"
+              className="h-auto w-[240px] sm:w-[300px] rounded-full mb-4 sm:mr-10"
             />
-            <div className="absolute bottom-0 right-0 h-10 w-10 bg-green-500 rounded-full border-2 border-white"></div>
+            <div
+              className={`absolute bottom-0 right-0 h-10 w-10 bg-green-500 rounded-full border-2 border-white ${
+                window.innerWidth < 640 ? "hidden" : ""
+              }`}
+            ></div>
           </div>
-          <div>
+          <div
+            className={`text-center sm:text-left ${
+              window.innerWidth < 640 ? "mt-6" : ""
+            }`}
+          >
             <p className="text-yellow-600 ml-5">Hi, my name is</p>
             <h1 className="text-4xl sm:text-7xl font-bold text-white ml-5 ">
               Leon Schwinkendorf
@@ -32,7 +40,6 @@ const Home: React.FC = () => {
           building responsive full-stack web applications... like this one here.
         </p>
         <div>
-          {" "}
           <Link
             to="aboutme"
             smooth={true}

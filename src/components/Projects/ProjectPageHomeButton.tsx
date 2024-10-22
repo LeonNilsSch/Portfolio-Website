@@ -5,14 +5,13 @@ const ProjectPageHomeButton = () => {
   const navigate = useNavigate();
 
   const handleButtonClick = () => {
-    // Navigate to the main page
     navigate("/");
   };
 
   return (
-    <div className="p-10 text-center">
+    <div className="p-6 text-center">
       <Button
-        className="bg-gray-200 hover:bg-gray-300 text-white font-bold py-3 px-6 rounded mb-20"
+        className="bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 px-6 rounded mb-20"
         onClick={handleButtonClick}
       >
         Back to Main Page

@@ -6,19 +6,17 @@ const ProjectPageButton = () => {
   const navigate = useNavigate();
 
   const handleButtonClick = () => {
-    // Navigate to ProjectPage component
     navigate("/project-page");
   };
 
   useEffect(() => {
-    // Scroll to the top of the page when component mounts
     window.scrollTo(0, 0);
   }, []);
 
   return (
-    <div className="p-10 text-center">
+    <div className="p-6 text-center">
       <Button
-        className="bg-gray-200 hover:bg-gray-300 text-white font-bold py-3 px-6 rounded mb-20"
+        className="bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 px-6 rounded mb-20"
         onClick={handleButtonClick}
       >
         More Project Details

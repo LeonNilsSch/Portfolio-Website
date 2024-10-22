@@ -92,12 +92,12 @@ const ProjectPage = () => {
       }}
     >
       <div
-        className="absolute inset-0 bg-black opacity-50"
+        className="absolute inset-0 bg-black opacity-70"
         aria-hidden="true"
       ></div>
       <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8 relative z-10">
         <h1 className="text-3xl font-bold mb-3 text-white">My Projects</h1>
-        <h2 className="text-1xl mb-20 text-white opacity-80">
+        <h2 className="text-1xl mb-20 text-gray-300">
           These are some more details to my own Projects
         </h2>
         <div className="space-y-20">
@@ -108,12 +108,14 @@ const ProjectPage = () => {
                 src={project.image}
                 alt={project.name}
               />
-              <div className="bg-white p-4 rounded-lg">
-                <h2 className="text-xl font-semibold mb-2">{project.name}</h2>
-                <p className="text-gray-600 mb-4">{project.description}</p>
+              <div className="bg-gray-900 p-4 rounded-lg">
+                <h2 className="text-xl font-semibold mb-2 text-white">
+                  {project.name}
+                </h2>
+                <p className="text-gray-400 mb-4">{project.description}</p>
                 <a
                   href={project.githubLink}
-                  className="text-blue-500 hover:underline"
+                  className="text-yellow-500 hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

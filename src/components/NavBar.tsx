@@ -11,15 +11,15 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed w-full z-50 bg-gray-100">
-      <div className="mr-10 mx-auto flex justify-end items-center h-[70px] text-white">
+    <div className="fixed w-full z-50 bg-gray-900">
+      <div className="mr-10 mx-auto flex justify-end items-center h-[70px] text-gray-300">
         <ul className="hidden md:flex space-x-6">
           <li>
             <Link
               to="home"
               smooth={true}
               duration={500}
-              className="hover:bg-yellow-500 rounded-lg cursor-pointer p-2 "
+              className="hover:bg-gray-700 rounded-lg cursor-pointer p-2 "
             >
               Home
             </Link>
@@ -29,7 +29,7 @@ const Navbar = () => {
               to="aboutme"
               smooth={true}
               duration={500}
-              className="hover:bg-yellow-500 rounded-lg cursor-pointer p-2"
+              className="hover:bg-gray-700 rounded-lg cursor-pointer p-2"
             >
               About
             </Link>
@@ -39,7 +39,7 @@ const Navbar = () => {
               to="skills"
               smooth={true}
               duration={500}
-              className="hover:bg-yellow-500 rounded-lg cursor-pointer p-2"
+              className="hover:bg-gray-700 rounded-lg cursor-pointer p-2"
             >
               Skills
             </Link>
@@ -49,7 +49,7 @@ const Navbar = () => {
               to="projects"
               smooth={true}
               duration={500}
-              className="hover:bg-yellow-500 rounded-lg cursor-pointer p-2"
+              className="hover:bg-gray-700 rounded-lg cursor-pointer p-2"
             >
               Projects
             </Link>
@@ -59,7 +59,7 @@ const Navbar = () => {
               to="contact"
               smooth={true}
               duration={500}
-              className="hover:bg-yellow-500 rounded-lg cursor-pointer p-2"
+              className="hover:bg-gray-700 rounded-lg cursor-pointer p-2"
             >
               Contact
             </Link>
@@ -68,7 +68,11 @@ const Navbar = () => {
 
         <div className="md:hidden">
           <button onClick={toggleNav}>
-            {navOpen ? <FaTimes /> : <FaBars />}
+            {navOpen ? (
+              <FaTimes className="text-gray-300" />
+            ) : (
+              <FaBars className="text-gray-300" />
+            )}
           </button>
         </div>
       </div>
@@ -77,14 +81,14 @@ const Navbar = () => {
       <ul
         className={`md:hidden ${
           navOpen ? "block" : "hidden"
-        } absolute top-[70px] left-0 w-full bg-gray-100 text-center`}
+        } absolute top-[70px] left-0 w-full bg-gray-900 text-center text-gray-300`}
       >
         <li>
           <Link
             to="home"
             smooth={true}
             duration={500}
-            className="block py-2 hover:bg-yellow-500 cursor-pointer"
+            className="block py-2 hover:bg-gray-700 cursor-pointer"
             onClick={toggleNav}
           >
             Home
@@ -95,7 +99,7 @@ const Navbar = () => {
             to="aboutme"
             smooth={true}
             duration={500}
-            className="block py-2 hover:bg-yellow-500 cursor-pointer"
+            className="block py-2 hover:bg-gray-700 cursor-pointer"
             onClick={toggleNav}
           >
             About
@@ -106,7 +110,7 @@ const Navbar = () => {
             to="skills"
             smooth={true}
             duration={500}
-            className="block py-2 hover:bg-yellow-500 cursor-pointer"
+            className="block py-2 hover:bg-gray-700 cursor-pointer"
             onClick={toggleNav}
           >
             Skills
@@ -117,7 +121,7 @@ const Navbar = () => {
             to="projects"
             smooth={true}
             duration={500}
-            className="block py-2 hover:bg-yellow-500 cursor-pointer"
+            className="block py-2 hover:bg-gray-700 cursor-pointer"
             onClick={toggleNav}
           >
             Projects
@@ -128,7 +132,7 @@ const Navbar = () => {
             to="contact"
             smooth={true}
             duration={500}
-            className="block py-2 hover:bg-yellow-500 cursor-pointer"
+            className="block py-2 hover:bg-gray-700 cursor-pointer"
             onClick={toggleNav}
           >
             Contact
@@ -148,7 +152,7 @@ const Navbar = () => {
               <FaLinkedin size={30} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between  ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
+          <li className="w-[160px] h-[60px] flex justify-between  ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-700">
             <a
               className="flex justify-between items-center w-full text-gray-300 mr-2 cursor-pointer"
               href="https://github.com/LeonNilsSch"
@@ -157,7 +161,7 @@ const Navbar = () => {
               <FaGithub size={30} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-teal-500">
             <a
               className="flex justify-between items-center w-full text-gray-300 mr-2 cursor-pointer"
               href="mailto:ln.schwinkendorf@gmail.com"
